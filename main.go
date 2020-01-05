@@ -1,10 +1,6 @@
 package main
 
-import "fmt"
-
 func main() {
-	salary := []int{12_000, 8_000, 15_000, 8_000}
-	fmt.Println(Bonus(salary))
 }
 func Bonus(salary []int) int {
 	generalBonuses :=0
