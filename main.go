@@ -4,11 +4,11 @@ func main() {
 }
 func Bonus(sale []int) int {
 	generalBonuses :=0
-	const minbonuses  = 10_000
-	const perсent = 5
+	const minBonuses  = 10_000
+	const percent = 5
 	for _, value := range sale{
-		if value >= minbonuses{
-			generalBonuses += (value - minbonuses) * perсent / 100
+		if value >= minBonuses{
+			generalBonuses += (value - minBonuses) * percent / 100
 		}
 	}
 	return generalBonuses

@@ -8,10 +8,10 @@ func TestBonus(t *testing.T) {
 		sale []int
 		want int
 	}{
-		{"All employees received a bonus", []int{12_000, 18_000, 15_000, 13_000},900},
-		{"A couple of employees received a bonus", []int{12_000, 10_000, 15_000, 8_000},350},
-		{"Employees did not deserve bonuses", []int{7_000, 8_000, 9_000, 9_500},0},
-		{"All employees deserve a bonus do not receive", []int{10_000, 10_000, 10_000, 10_000},0},
+		{"if all sales receive a bonus", []int{12_000, 18_000, 15_000, 13_000},900},
+		{"if some sales get a bonus", []int{12_000, 10_000, 15_000, 8_000},350},
+		{"if all sales are not worth the bonus", []int{7_000, 8_000, 9_000, 9_500},0},
+		{"if all sales are worth the bonus but do not receive", []int{10_000, 10_000, 10_000, 10_000},0},
 		// TODO: Add test cases.
 	}
 	for _, testCase := range testCases {
